@@ -307,7 +307,7 @@ export default function LabelCarousel() {
 
                   {/* Content */}
                   <div className="flex-1 flex flex-col">
-                    <h3 className="text-lg font-semibold text-center mb-2 text-gray-800">
+                    <h3 className="text-lg font-semibold text-center mb-2 text-gray-400">
                       {formatTomatoName(label)}
                     </h3>
 

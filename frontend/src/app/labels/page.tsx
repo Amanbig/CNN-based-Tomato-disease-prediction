@@ -17,13 +17,13 @@ export default function LabelsPage() {
             </Link>
             <div className="flex items-center space-x-4">
               <Link href="/predict">
-                <Button variant="ghost">Disease Detection</Button>
+                <Button variant="ghost" className='cursor-pointer'>Disease Detection</Button>
               </Link>
               <Link href="/labels">
-                <Button variant="ghost" className="bg-red-50 dark:bg-red-900/20">Disease Types</Button>
+                <Button variant="ghost" className='cursor-pointer'>Disease Types</Button>
               </Link>
               <Link href="/notebook">
-                <Button variant="ghost">Research</Button>
+                <Button variant="ghost" className='cursor-pointer'>Research</Button>
               </Link>
             </div>
           </div>
