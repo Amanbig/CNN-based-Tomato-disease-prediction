@@ -24,11 +24,14 @@ app.add_middleware(
 
 @app.get("/labels")
 def get_labels():
-    return imagelinks
+    return {
+        "labels":labels,
+        "image" : imagelinks,
+    }
     
 @app.get("/notebook")
 def get_notebook():
-    with open("./notebook/crop-recommendation-system.ipynb", "r", encoding="utf-8") as f:
+    with open("./notebook/cnn-based.ipynb", "r", encoding="utf-8") as f:
         notebook = nbformat.read(f, as_version=4)
     return notebook.dict()
 
