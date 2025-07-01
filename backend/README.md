@@ -43,6 +43,10 @@ backend/
    ```bash
    fastapi dev app.py
    ```
+4. Create .env file:
+   ```bash
+   ALLOWED_URL="*"
+   ```
 
 The server will start at `http://localhost:8000`.
 
@@ -58,7 +62,7 @@ Uploads an image and returns disease prediction results.
 ```json
 {
     "prediction": "Disease Name",
-    "confidence": 0.95
+    "image": "image_link"
 }
 ```
 

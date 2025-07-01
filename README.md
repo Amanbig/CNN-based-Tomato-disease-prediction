@@ -14,7 +14,7 @@ TomatoGuard AI is a comprehensive web application that uses Convolutional Neural
 
 The project is split into two main components:
 
-### Backend (Python/Flask)
+### Backend (Python/Fastapi)
 - CNN model for disease detection
 - RESTful API endpoints
 - Image processing capabilities
@@ -38,7 +38,7 @@ The project is split into two main components:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/CNN-based-Tomato-disease-prediction.git
+   git clone https://github.com/amansvg/CNN-based-Tomato-disease-prediction.git
    cd CNN-based-Tomato-disease-prediction
    ```
 
@@ -48,7 +48,7 @@ The project is split into two main components:
    python -m venv venv
    source venv/bin/activate  # On Windows: .\venv\Scripts\activate
    pip install -r requirements.txt
-   python app.py
+   fastapi dev app.py
    ```
 
 3. Set up the frontend:
@@ -60,7 +60,7 @@ The project is split into two main components:
 
 4. Open your browser and navigate to:
    - Frontend: http://localhost:3000
-   - Backend API: http://localhost:5000
+   - Backend API: http://localhost:8000
 
 ## 📚 Documentation
 
