@@ -4,7 +4,7 @@ import tensorflow as tf
 from tensorflow.keras.utils import img_to_array, load_img
 import os
 import numpy as np
-from constants.constant import imagelinks, labels,alternative_imagelinks
+from constants.constant import imagelinks, labels,imagelinks_picsum
 import nbformat
 from io import BytesIO
 
@@ -26,7 +26,7 @@ app.add_middleware(
 def get_labels():
     return {
         "labels":labels,
-        "image" : alternative_imagelinks,
+        "image" : imagelinks,
     }
     
 @app.get("/notebook")

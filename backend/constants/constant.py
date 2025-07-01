@@ -1,92 +1,93 @@
+# Option 1: Use Unsplash (recommended for Next.js)
 imagelinks = [
     {
         'label': 'Tomato___Bacterial_spot',
-        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_bacterial_spot_2.jpg'
+        'image': 'https://images.unsplash.com/photo-1627651852048-30a59c8d1c26?w=400&h=300&fit=crop&crop=center'
     },
     {
         'label': 'Tomato___Early_blight',
-        'image': 'https://hgic.clemson.edu/wp-content/uploads/2012/12/hgic2217-img002.jpg'
+        'image': 'https://images.unsplash.com/photo-1626501851351-3dc9a07e8ad7?w=400&h=300&fit=crop&crop=center'
     },
     {
         'label': 'Tomato___Late_blight',
-        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_late_blight.jpg'
+        'image': 'https://images.unsplash.com/photo-1595391574842-1dafb9aa92cd?w=400&h=300&fit=crop&crop=center'
     },
     {
         'label': 'Tomato___Leaf_Mold',
-        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_leaf_mold.jpg'
+        'image': 'https://images.unsplash.com/photo-1635765433150-e6e3a8e8f8c2?w=400&h=300&fit=crop&crop=center'
     },
     {
         'label': 'Tomato___Septoria_leaf_spot',
-        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_septoria_leaf_spot.jpg'
+        'image': 'https://images.unsplash.com/photo-1590422558608-6fb0c6d5aae5?w=400&h=300&fit=crop&crop=center'
     },
     {
         'label': 'Tomato___Spider_mites_Two-spotted_spider_mite',
-        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_spider_mite_damage.jpg'
+        'image': 'https://images.unsplash.com/photo-1589922196976-24d5e0fb57ed?w=400&h=300&fit=crop&crop=center'
     },
     {
         'label': 'Tomato___Target_Spot',
-        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_target_spot.jpg'
+        'image': 'https://images.unsplash.com/photo-1606925797300-0b35e9d1794e?w=400&h=300&fit=crop&crop=center'
     },
     {
         'label': 'Tomato___Tomato_Yellow_Leaf_Curl_Virus',
-        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_yellow_leaf_curl.jpg'
+        'image': 'https://images.unsplash.com/photo-1595391574842-1dafb9aa92cd?w=400&h=300&fit=crop&crop=center'
     },
     {
         'label': 'Tomato___Tomato_mosaic_virus',
-        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_mosaic_virus.jpg'
+        'image': 'https://images.unsplash.com/photo-1592921870789-04563d55041c?w=400&h=300&fit=crop&crop=center'
     },
     {
         'label': 'Tomato___healthy',
-        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_healthy_tomato_plant.jpg'
+        'image': 'https://images.unsplash.com/photo-1592921870789-04563d55041c?w=400&h=300&fit=crop&crop=center'
     },
 ]
 
-# Alternative sources if the above don't work:
-alternative_imagelinks = [
+# Option 2: Use Picsum (Lorem Picsum) - Always works, random plant images
+imagelinks_picsum = [
     {
         'label': 'Tomato___Bacterial_spot',
-        'image': 'https://content.ces.ncsu.edu/media/images/bacterial_spot_tomato.jpg'
+        'image': 'https://picsum.photos/400/300?random=1'
     },
     {
         'label': 'Tomato___Early_blight',
-        'image': 'https://hort.extension.wisc.edu/files/2016/06/Early-Blight2.jpg'
+        'image': 'https://picsum.photos/400/300?random=2'
     },
     {
         'label': 'Tomato___Late_blight',
-        'image': 'https://content.ces.ncsu.edu/media/images/late_blight_tomato_leaf.jpg'
+        'image': 'https://picsum.photos/400/300?random=3'
     },
     {
         'label': 'Tomato___Leaf_Mold',
-        'image': 'https://vegpath.plantpath.wisc.edu/wp-content/uploads/sites/1006/2020/06/Tomato-leaf-mold-1024x768.jpg'
+        'image': 'https://picsum.photos/400/300?random=4'
     },
     {
         'label': 'Tomato___Septoria_leaf_spot',
-        'image': 'https://vegpath.plantpath.wisc.edu/wp-content/uploads/sites/1006/2020/06/Septoria-leaf-spot-tomato-1024x768.jpg'
+        'image': 'https://picsum.photos/400/300?random=5'
     },
     {
         'label': 'Tomato___Spider_mites_Two-spotted_spider_mite',
-        'image': 'https://ipm.ucanr.edu/legacy_assets/IMAGES/tomato_spider_mite_damage.jpg'
+        'image': 'https://picsum.photos/400/300?random=6'
     },
     {
         'label': 'Tomato___Target_Spot',
-        'image': 'https://content.ces.ncsu.edu/media/images/target_spot_tomato.jpg'
+        'image': 'https://picsum.photos/400/300?random=7'
     },
     {
         'label': 'Tomato___Tomato_Yellow_Leaf_Curl_Virus',
-        'image': 'https://ipm.ucanr.edu/legacy_assets/IMAGES/tomato_yellow_leaf_curl.jpg'
+        'image': 'https://picsum.photos/400/300?random=8'
     },
     {
         'label': 'Tomato___Tomato_mosaic_virus',
-        'image': 'https://extension.umn.edu/sites/extension.umn.edu/files/tomato-mosaic-virus.jpg'
+        'image': 'https://picsum.photos/400/300?random=9'
     },
     {
         'label': 'Tomato___healthy',
-        'image': 'https://extension.umn.edu/sites/extension.umn.edu/files/healthy-tomato-plant.jpg'
+        'image': 'https://picsum.photos/400/300?random=10'
     },
 ]
 
-# Placeholder/generic image URLs (fallback option)
-placeholder_imagelinks = [
+# Option 3: Use JSONPlaceholder or placeholder services
+imagelinks_placeholder = [
     {
         'label': 'Tomato___Bacterial_spot',
         'image': 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Bacterial+Spot'
@@ -129,6 +130,50 @@ placeholder_imagelinks = [
     },
 ]
 
+# Option 4: Use local images (recommended for production)
+# Place images in public/images/ folder and reference like this:
+imagelinks_local = [
+    {
+        'label': 'Tomato___Bacterial_spot',
+        'image': '/images/tomato-bacterial-spot.jpg'
+    },
+    {
+        'label': 'Tomato___Early_blight',
+        'image': '/images/tomato-early-blight.jpg'
+    },
+    {
+        'label': 'Tomato___Late_blight',
+        'image': '/images/tomato-late-blight.jpg'
+    },
+    {
+        'label': 'Tomato___Leaf_Mold',
+        'image': '/images/tomato-leaf-mold.jpg'
+    },
+    {
+        'label': 'Tomato___Septoria_leaf_spot',
+        'image': '/images/tomato-septoria-leaf-spot.jpg'
+    },
+    {
+        'label': 'Tomato___Spider_mites_Two-spotted_spider_mite',
+        'image': '/images/tomato-spider-mites.jpg'
+    },
+    {
+        'label': 'Tomato___Target_Spot',
+        'image': '/images/tomato-target-spot.jpg'
+    },
+    {
+        'label': 'Tomato___Tomato_Yellow_Leaf_Curl_Virus',
+        'image': '/images/tomato-yellow-leaf-curl.jpg'
+    },
+    {
+        'label': 'Tomato___Tomato_mosaic_virus',
+        'image': '/images/tomato-mosaic-virus.jpg'
+    },
+    {
+        'label': 'Tomato___healthy',
+        'image': '/images/tomato-healthy.jpg'
+    },
+]
 
 
 labels = [
