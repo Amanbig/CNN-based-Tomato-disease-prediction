@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import NotebookViewer from '@/components/app/notebookViewer';
+import Prediction from '@/components/app/prediction';
 import { Button } from '@/components/ui/button';
 import { Leaf } from 'lucide-react';
 
-export default function NotebookPage() {
+export default function PredictPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-red-50 dark:from-gray-900 dark:to-gray-800">
       {/* Navigation */}
@@ -16,13 +16,13 @@ export default function NotebookPage() {
             </Link>
             <div className="flex items-center space-x-4">
               <Link href="/predict">
-                <Button variant="ghost">Disease Detection</Button>
+                <Button variant="ghost" className="bg-red-50 dark:bg-red-900/20">Disease Detection</Button>
               </Link>
               <Link href="/labels">
                 <Button variant="ghost">Disease Types</Button>
               </Link>
               <Link href="/notebook">
-                <Button variant="ghost" className="bg-red-50 dark:bg-red-900/20">Research</Button>
+                <Button variant="ghost">Research</Button>
               </Link>
             </div>
           </div>
@@ -32,13 +32,13 @@ export default function NotebookPage() {
       <main className="container mx-auto px-4 py-12">
         <div className="text-center mb-12">
           <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            Research Notebook
+            Tomato Disease Detection
           </h1>
           <p className="text-lg text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-            Explore the research and development process behind our tomato disease detection model.
+            Upload a photo of your tomato plant and our AI model will help identify any diseases.
           </p>
         </div>
-        <NotebookViewer />
+        <Prediction />
       </main>
     </div>
   );

@@ -1,45 +1,134 @@
 imagelinks = [
     {
         'label': 'Tomato___Bacterial_spot',
-        'image': 'https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato_Bacterial_spot/0a2e8da0-90f1-4e6c-9aa4-7e7d08671f35___GCREC_Bact.Sp 5787.JPG'
+        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_bacterial_spot_2.jpg'
     },
     {
         'label': 'Tomato___Early_blight',
-        'image': 'https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato_Early_blight/0a4a0fbe-97fa-4e5e-b7ae-5684e3a2a0e5___RS_Early.B 7001.JPG'
+        'image': 'https://hgic.clemson.edu/wp-content/uploads/2012/12/hgic2217-img002.jpg'
     },
     {
         'label': 'Tomato___Late_blight',
-        'image': 'https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato_Late_blight/1f1dbf41-6f6f-4c2e-9e6a-2c05bde96db9___RS_Late.B 7152.JPG'
+        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_late_blight.jpg'
     },
     {
         'label': 'Tomato___Leaf_Mold',
-        'image': 'https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato_Leaf_Mold/0231922c-7aa3-4d9e-9b50-b89ca5edbcb7___Crnl_L.Mold 8590.JPG'
+        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_leaf_mold.jpg'
     },
     {
         'label': 'Tomato___Septoria_leaf_spot',
-        'image': 'https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato_Septoria_leaf_spot/0f93e740-59f8-4f8e-87d2-685ceddf9c3f___DSC_0309.NEF.jpg'
+        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_septoria_leaf_spot.jpg'
     },
     {
         'label': 'Tomato___Spider_mites_Two-spotted_spider_mite',
-        'image': 'https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato_Spider_mites_Two-spotted_spider_mite/047b27c5-9da6-4dd9-8b6a-6b61e09f4ec3___Com.G_SpM_CG 1335.JPG'
+        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_spider_mite_damage.jpg'
     },
     {
         'label': 'Tomato___Target_Spot',
-        'image': 'https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato_Target_Spot/0ff83312-d7d4-4686-8e1c-12e2a20e681e___Com.G_TgS_FL 1671.JPG'
+        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_target_spot.jpg'
     },
     {
         'label': 'Tomato___Tomato_Yellow_Leaf_Curl_Virus',
-        'image': 'https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato_Tomato_Yellow_Leaf_Curl_Virus/03a7e182-9b56-426b-b193-061d0a6e27f8___YLCV_GCREC 5047.JPG'
+        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_yellow_leaf_curl.jpg'
     },
     {
         'label': 'Tomato___Tomato_mosaic_virus',
-        'image': 'https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato_Tomato_mosaic_virus/03c9e3db-d4e4-4381-a206-bd6a360775ee___PSU_CG 2301.JPG'
+        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_tomato_mosaic_virus.jpg'
     },
     {
         'label': 'Tomato___healthy',
-        'image': 'https://raw.githubusercontent.com/spMohanty/PlantVillage-Dataset/master/raw/color/Tomato_healthy/0a0c2249-c7fb-4b90-b885-cf32b49c10a4___PSU_CG 2122.JPG'
+        'image': 'https://extension.umd.edu/sites/extension.umd.edu/files/styles/optimized/public/2021-04/hgic_healthy_tomato_plant.jpg'
     },
 ]
+
+# Alternative sources if the above don't work:
+alternative_imagelinks = [
+    {
+        'label': 'Tomato___Bacterial_spot',
+        'image': 'https://content.ces.ncsu.edu/media/images/bacterial_spot_tomato.jpg'
+    },
+    {
+        'label': 'Tomato___Early_blight',
+        'image': 'https://hort.extension.wisc.edu/files/2016/06/Early-Blight2.jpg'
+    },
+    {
+        'label': 'Tomato___Late_blight',
+        'image': 'https://content.ces.ncsu.edu/media/images/late_blight_tomato_leaf.jpg'
+    },
+    {
+        'label': 'Tomato___Leaf_Mold',
+        'image': 'https://vegpath.plantpath.wisc.edu/wp-content/uploads/sites/1006/2020/06/Tomato-leaf-mold-1024x768.jpg'
+    },
+    {
+        'label': 'Tomato___Septoria_leaf_spot',
+        'image': 'https://vegpath.plantpath.wisc.edu/wp-content/uploads/sites/1006/2020/06/Septoria-leaf-spot-tomato-1024x768.jpg'
+    },
+    {
+        'label': 'Tomato___Spider_mites_Two-spotted_spider_mite',
+        'image': 'https://ipm.ucanr.edu/legacy_assets/IMAGES/tomato_spider_mite_damage.jpg'
+    },
+    {
+        'label': 'Tomato___Target_Spot',
+        'image': 'https://content.ces.ncsu.edu/media/images/target_spot_tomato.jpg'
+    },
+    {
+        'label': 'Tomato___Tomato_Yellow_Leaf_Curl_Virus',
+        'image': 'https://ipm.ucanr.edu/legacy_assets/IMAGES/tomato_yellow_leaf_curl.jpg'
+    },
+    {
+        'label': 'Tomato___Tomato_mosaic_virus',
+        'image': 'https://extension.umn.edu/sites/extension.umn.edu/files/tomato-mosaic-virus.jpg'
+    },
+    {
+        'label': 'Tomato___healthy',
+        'image': 'https://extension.umn.edu/sites/extension.umn.edu/files/healthy-tomato-plant.jpg'
+    },
+]
+
+# Placeholder/generic image URLs (fallback option)
+placeholder_imagelinks = [
+    {
+        'label': 'Tomato___Bacterial_spot',
+        'image': 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Bacterial+Spot'
+    },
+    {
+        'label': 'Tomato___Early_blight',
+        'image': 'https://via.placeholder.com/400x300/8B4513/FFFFFF?text=Early+Blight'
+    },
+    {
+        'label': 'Tomato___Late_blight',
+        'image': 'https://via.placeholder.com/400x300/2F4F2F/FFFFFF?text=Late+Blight'
+    },
+    {
+        'label': 'Tomato___Leaf_Mold',
+        'image': 'https://via.placeholder.com/400x300/556B2F/FFFFFF?text=Leaf+Mold'
+    },
+    {
+        'label': 'Tomato___Septoria_leaf_spot',
+        'image': 'https://via.placeholder.com/400x300/8FBC8F/000000?text=Septoria+Leaf+Spot'
+    },
+    {
+        'label': 'Tomato___Spider_mites_Two-spotted_spider_mite',
+        'image': 'https://via.placeholder.com/400x300/DC143C/FFFFFF?text=Spider+Mites'
+    },
+    {
+        'label': 'Tomato___Target_Spot',
+        'image': 'https://via.placeholder.com/400x300/A0522D/FFFFFF?text=Target+Spot'
+    },
+    {
+        'label': 'Tomato___Tomato_Yellow_Leaf_Curl_Virus',
+        'image': 'https://via.placeholder.com/400x300/FFD700/000000?text=Yellow+Leaf+Curl'
+    },
+    {
+        'label': 'Tomato___Tomato_mosaic_virus',
+        'image': 'https://via.placeholder.com/400x300/9ACD32/000000?text=Mosaic+Virus'
+    },
+    {
+        'label': 'Tomato___healthy',
+        'image': 'https://via.placeholder.com/400x300/228B22/FFFFFF?text=Healthy+Tomato'
+    },
+]
+
 
 
 labels = [
