@@ -1,36 +1,135 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TomatoGuard AI Frontend
 
-## Getting Started
+A modern, responsive web interface for TomatoGuard AI, providing an intuitive user experience for tomato disease detection.
 
-First, run the development server:
+## 🌟 Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Real-time Disease Detection**: Upload and instantly analyze tomato plant images
+- **Disease Catalog**: Comprehensive information about various tomato diseases
+- **Research Insights**: Interactive notebook viewer for technical documentation
+- **Responsive Design**: Optimized for all device sizes
+- **Dark Mode**: Enhanced viewing experience with theme support
+- **Accessibility**: ARIA-compliant components for better usability
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 14 with App Router
+- **Language**: TypeScript for type safety
+- **Styling**: Tailwind CSS with custom theme
+- **Components**: Shadcn/ui for consistent UI
+- **Icons**: Lucide React icons
+- **State Management**: React Hooks
+
+## 📁 Project Structure
+
+```
+frontend/
+├── src/
+│   ├── app/           # Next.js pages and layouts
+│   │   ├── page.tsx   # Homepage
+│   │   ├── predict/   # Disease detection page
+│   │   ├── labels/    # Disease catalog page
+│   │   └── notebook/  # Research viewer page
+│   ├── components/    # Reusable UI components
+│   │   ├── ui/       # Base UI components
+│   │   └── footer.tsx # Global footer component
+│   └── lib/          # Utilities and configurations
+├── public/           # Static assets and images
+└── package.json      # Project dependencies
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Getting Started
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Install Dependencies**:
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Start Development Server**:
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
 
-## Learn More
+3. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-To learn more about Next.js, take a look at the following resources:
+## 📱 Key Components
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Pages
+- **Home**: Landing page with feature highlights
+- **Disease Detection**: Image upload and analysis interface
+- **Disease Catalog**: Browse and learn about diseases
+- **Research**: Technical documentation viewer
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### UI Components
+- **Navigation**: Responsive navbar with theme toggle
+- **Footer**: Global footer with important links
+- **Cards**: Information display components
+- **Buttons**: Interactive elements with hover states
 
-## Deploy on Vercel
+## 🎨 Styling Guidelines
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Theme
+- Primary color: Red (customizable)
+- Background: Light/Dark modes
+- Typography: System font stack
+- Spacing: Consistent grid system
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### CSS Features
+- Responsive breakpoints
+- Dark mode variables
+- Glassmorphism effects
+- Smooth transitions
+- Hover animations
+
+## 🛠️ Development
+
+### Code Quality
+
+```bash
+# Lint code
+npm run lint
+
+# Format code
+npm run format
+
+# Type check
+npm run type-check
+```
+
+### Build & Deploy
+
+```bash
+# Create production build
+npm run build
+
+# Start production server
+npm start
+```
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch
+3. Commit your changes
+4. Push to the branch
+5. Open a Pull Request
+
+## 📝 Best Practices
+
+- Use TypeScript for all new components
+- Follow component composition patterns
+- Implement responsive design
+- Write meaningful commit messages
+- Add proper documentation
+- Ensure accessibility compliance
+
+## 🔗 Related Links
+
+- [Main Project README](../README.md)
+- [Backend Documentation](../backend/README.md)
+- [Component Library](https://ui.shadcn.com)
+- [Next.js Documentation](https://nextjs.org/docs)
