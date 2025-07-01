@@ -62,6 +62,18 @@ The project is split into two main components:
    - Frontend: http://localhost:3000
    - Backend API: http://localhost:8000
 
+## 🚀 Quick Start with Docker
+
+The fastest way to get the application running:
+
+```bash
+# Start the application
+docker-compose up -d
+
+# View logs (optional)
+docker-compose logs -f
+```
+
 ## 📚 Documentation
 
 - [Backend Documentation](./backend/README.md)
