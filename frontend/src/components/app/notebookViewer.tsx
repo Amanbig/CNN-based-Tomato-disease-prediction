@@ -26,21 +26,58 @@ import {
   AlertCircle,
   Loader2,
 } from "lucide-react";
+import Image from "next/image";
 
 SyntaxHighlighter.registerLanguage("ts", ts);
 SyntaxHighlighter.registerLanguage("python", python);
 
+// Define proper types for notebook structure
+interface OutputData {
+  "text/plain"?: string | string[];
+  "text/html"?: string | string[];
+  "image/png"?: string;
+  [key: string]: unknown;
+}
+
+interface StreamOutput {
+  output_type: "stream";
+  name: string;
+  text: string | string[];
+}
+
+interface ExecuteResultOutput {
+  output_type: "execute_result";
+  data: OutputData;
+  execution_count: number;
+  metadata?: Record<string, unknown>;
+}
+
+interface DisplayDataOutput {
+  output_type: "display_data";
+  data: OutputData;
+  metadata?: Record<string, unknown>;
+}
+
+interface ErrorOutput {
+  output_type: "error";
+  ename: string;
+  evalue: string;
+  traceback: string[];
+}
+
+type CellOutput = StreamOutput | ExecuteResultOutput | DisplayDataOutput | ErrorOutput;
+
 type Cell = {
-  cell_type: string;
-  source: string[];
-  outputs?: any[];
-  execution_count?: number;
-  metadata?: any;
+  cell_type: "code" | "markdown" | "raw";
+  source: string | string[];
+  outputs?: CellOutput[];
+  execution_count?: number | null;
+  metadata?: Record<string, unknown>;
 };
 
 type NotebookData = {
   cells: Cell[];
-  metadata?: any;
+  metadata?: Record<string, unknown>;
   nbformat?: number;
   nbformat_minor?: number;
 };
@@ -94,10 +131,10 @@ const NotebookViewer: React.FC = () => {
     return Array.isArray(source) ? source.join("") : source;
   };
 
-  const renderOutput = (output: any, outputIndex: number) => {
+  const renderOutput = (output: CellOutput, outputIndex: number) => {
     if (output.output_type === "stream") {
       return (
-        <div className="bg-gray-50 dark:bg-gray-800 border-l-4 border-blue-400 p-3 font-mono text-sm">
+        <div className="bg-gray-50 dark:bg-gray-800 border-l-4 border-blue-400 p-3 font-mono text-sm" key={outputIndex}>
           <div className="text-xs text-gray-500 mb-1 uppercase tracking-wide">
             {output.name || "stdout"}
           </div>
@@ -145,7 +182,7 @@ const NotebookViewer: React.FC = () => {
             <div className="text-xs text-gray-500 mb-2 uppercase tracking-wide">
               Image Output
             </div>
-            <img
+            <Image
               src={`data:image/png;base64,${data["image/png"]}`}
               alt="Output"
               className="max-w-full h-auto"
@@ -169,10 +206,11 @@ const NotebookViewer: React.FC = () => {
       );
     }
 
+    // This should never happen with our types, but keeping as fallback
     return (
       <div className="bg-gray-100 dark:bg-gray-800 p-3 text-sm">
         <div className="text-xs text-gray-500 mb-1">
-          Unknown output type: {output.output_type}
+          Unknown output type
         </div>
         <pre className="text-xs">{JSON.stringify(output, null, 2)}</pre>
       </div>

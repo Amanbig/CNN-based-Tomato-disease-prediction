@@ -270,7 +270,7 @@ export default function LabelCarousel() {
         <CarouselContent className="-ml-2 md:-ml-4">
           {labels.map((label, index) => (
             <CarouselItem
-              key={label}
+              key={index}
               className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/3 lg:basis-1/4"
             >
               <Card className="overflow-hidden hover:shadow-lg transition-shadow duration-300 h-full">

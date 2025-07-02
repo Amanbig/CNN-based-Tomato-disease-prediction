@@ -61,7 +61,7 @@ export default function Home() {
                   <Leaf className="h-12 w-12 text-red-600 mx-auto mb-4" />
                   <h3 className="text-xl font-semibold mb-2">Instant Detection</h3>
                   <p className="text-gray-600 dark:text-gray-300">
-                    Get immediate results about your plant's health status using our advanced AI model.
+                    Get immediate results about your plants health status using our advanced AI model.
                   </p>
                   <Button variant="ghost" className="mt-4 text-red-600 hover:text-red-700">
                     Try Now →

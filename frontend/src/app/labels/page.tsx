@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import LabelCarousel from '@/components/app/labelCrowser';
-import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Leaf } from 'lucide-react';
 
